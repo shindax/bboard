@@ -27,7 +27,7 @@
     <div class="form-group">
         <label for="txtPrice">Цена</label>
         <input name="price" id="txtPrice" class="form-control @error('price') is-invalid @enderror"
-               value="{{ old('price', $bb->price) }}">
+               value="{{ old('price ', $bb->price) }}">
         @error('price')
         <span class="invalid-feedback">
             <strong>{{ $message }}</strong>
